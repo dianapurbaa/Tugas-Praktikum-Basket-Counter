@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_name_tim_a"
+        android:layout_width="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="150dp"
+        android:hint="Tim A"/>
+
+    <EditText
+        android:id="@+id/edit_name_tim_b"
+        android:layout_width="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name_tim_a"
+        android:layout_marginTop="16dp"
+        android:hint="Tim B"/>
+
+    <Button
+        android:id="@+id/btn_input_name_tim"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edit_name_tim_b"
+        android:layout_marginTop="24dp"
+        android:text="INPUT"
+        android:onClick="inputName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
